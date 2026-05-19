@@ -1,0 +1,30 @@
+{
+  "name": "maha-agentic-gateway",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server.js",
+    "dev": "node --loader ts-node/esm src/mcp-server.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "eventsource": "^4.1.0",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3",
+    "ws": "^8.20.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "@types/socket.io": "^3.0.1",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
